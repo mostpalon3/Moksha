@@ -7,7 +7,7 @@ import Contacts from './pages/Contacts'
 
 function App() {
   return (
-    <>
+    <div className="scroll-smooth">
       <Background>
         <div className="text-[200px] text-white">Scroll Vertical</div>
         {/* <img src="/src/assets/images/relic.svg" alt="" /> */}
@@ -17,7 +17,7 @@ function App() {
         <Contacts/>
       </Background>
       
-    </>
+    </div>
   )
 }
 
