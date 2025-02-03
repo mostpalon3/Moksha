@@ -76,7 +76,7 @@ import { Group } from '../components/Group'
           <span className=' text-white text-[36px]'>Entry</span>
         </div>
         <div className="w-[129px] h-[129px] rounded-full border-white items-center border-[1px] bg-[#060617] flex relative top-[-45dvh] left-[-5dvh]">
-          <span className=' text-white text-[36px] ]'>Dress Code</span>
+          <span className=' text-white text-[36px] text-nowrap'>Dress Code</span>
         </div>
         <div className="w-[129px] h-[129px] rounded-full border-white items-center border-[1px] bg-[#060617] flex relative top-[-53dvh] left-[30dvh]">
           <span className=' text-white text-[36px]'>Something</span>

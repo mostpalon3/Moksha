@@ -3,8 +3,8 @@ import { Group } from '../components/Group'
 
 const Timeline = () => {
   return (
-    <Group className={`flex items-center justify-center absolute left-[15200px]  h-screen`}>
-      <h1 className='text-white flex relative text-[40px] font-cinzel'>The Moksha Timeline</h1>
+    <Group className={`flex items-center justify-center absolute left-[15200px] h-screen`}>
+      <h1 className='text-white flex relative top-[-60dvh] text-[40px] font-cinzel'>The Moksha Timeline</h1>
     </Group>
   )
 }
