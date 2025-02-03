@@ -32,7 +32,7 @@ const Background = ({children}) => {
   return (
     <div 
       ref={containerRef}
-      className="relative h-screen w-full overflow-x-auto scrollbar-hidden"
+      className="relative h-screen w-full overflow-x-auto overflow-y-hidden scrollbar-hidden"
     >
       <Group
         className="h-screen overflow-auto scrollbar-hidden"
