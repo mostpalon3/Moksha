@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Group } from "./Group";
 import bgImage from "../assets/images/bg.jpg";
 
 const Background = ({children}) => {
   const [imageWidth, setImageWidth] = useState(0);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const img = new Image();
@@ -16,8 +17,23 @@ const Background = ({children}) => {
     };
   }, []);
 
+  useEffect(() => {
+    const container = containerRef.current;
+    
+    const handleWheel = (e) => {
+      e.preventDefault();
+      container.scrollLeft += e.deltaY;
+    };
+    
+    container.addEventListener('wheel', handleWheel, { passive: false });
+    return () => container.removeEventListener('wheel', handleWheel);
+  }, []);
+
   return (
-    <div className="relative h-screen w-full overflow-x-auto scrollbar-hidden">
+    <div 
+      ref={containerRef}
+      className="relative h-screen w-full overflow-x-auto scrollbar-hidden"
+    >
       <Group
         className="h-screen overflow-auto scrollbar-hidden"
         style={{
