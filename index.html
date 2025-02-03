@@ -12,5 +12,23 @@
       <iframe id="cdr-timeline-iframe" src="your-iframe-source.html"></iframe>
     </div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- <script type="text/javascript">
+      (function() {
+      if (window.postMessage) {
+      var cdrMouseupFunc = function() {
+      var cdrIFrame = document.getElementById("cdr-timeline-iframe");
+      if (cdrIFrame.contentWindow && cdrIFrame.contentWindow.postMessage) {
+      cdrIFrame.contentWindow.postMessage("mouseup","*");
+      }
+      }
+      if (typeof window.addEventListener != "undefined") {
+      window.addEventListener("mouseup", cdrMouseupFunc, false);
+      }
+      else if (typeof window.attachEvent != "undefined") {
+      window.attachEvent("onmouseup", cdrMouseupFunc);
+      }
+      }
+      })()
+      </script> -->
   </body>
 </html>
