@@ -1,11 +1,9 @@
 import React from "react";
 import { Group } from "../components/Group";
-import bgImage from "../assets/images/bg1.png";
 import relic from "../assets/images/relic.svg";
 import crystal1 from "../assets/images/crystal1.svg";
 import crystal2 from "../assets/images/crystal2.svg";
 import arrow from "../assets/images/arrow.png";
-import mist from "../assets/images/mist.png";
 
 const Gallery = () => {
   return (

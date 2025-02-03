@@ -1,7 +1,6 @@
 import React from 'react'
-import Background from './components/background'
+import Background from './components/Background'
 import Gallery from './pages/Gallery'
-// import Gallery from './pages/Gallery'
 
 function App() {
   return (
